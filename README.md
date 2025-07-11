@@ -48,3 +48,49 @@ typedef struct movie {
     int year;
     struct movie *lc, *rc; // BST pointers
 } movie_t;
+
+🚀 Installation & Usage
+
+bash
+# Clone and build
+git clone https://github.com/yourrepo/streaming-service.git
+cd streaming-service
+make
+
+# Run with input file
+./streaming_service input_commands.txt
+
+📂 Sample Input File
+
+# User operations
+R 101
+R 102
+U 101
+
+# Movie operations
+A 1001 0 2022  # Horror
+A 1002 1 2023  # Sci-Fi
+D
+
+# User actions
+W 102 1001
+S 102
+F 102 0 1 2020
+
+📊 Performance
+
+Operation	Time Complexity	Space Complexity
+User Register	O(n)	O(1)
+Movie Add	O(log n)	O(1)
+Movie Search	O(log n)	O(1)
+
+🛠️ Build Options
+
+CC = gcc
+CFLAGS = -Wall -Wextra
+DEBUG_FLAGS = -DDEBUG # Enable debug prints
+
+all: streaming_service
+
+streaming_service: main.c streaming_service.h
+    $(CC) $(CFLAGS) $^ -o $@
