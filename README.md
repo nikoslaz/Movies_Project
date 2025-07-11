@@ -51,9 +51,9 @@ typedef struct movie {
 
 ```
 
-🚀 Installation & Usage
+# 🚀 Installation & Usage
 
-bash
+```bash
 # Clone and build
 git clone https://github.com/yourrepo/streaming-service.git
 cd streaming-service
@@ -61,6 +61,7 @@ make
 
 # Run with input file
 ./streaming_service input_commands.txt
+```
 
 📂 Sample Input File
 
