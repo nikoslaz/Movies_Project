@@ -49,6 +49,8 @@ typedef struct movie {
     struct movie *lc, *rc; // BST pointers
 } movie_t;
 
+```
+
 🚀 Installation & Usage
 
 bash
